@@ -62,14 +62,21 @@
 // Console.WriteLine($"y={y}");
 
 //  6. Выяснить является ли число чётным
-Console.Clear();
-Console.Write("Введите число, проверю на четность: ");
-int evenNumber = Convert.ToInt32(Console.ReadLine());
-if (evenNumber % 2 == 0) Console.WriteLine($"Число {evenNumber} четное");
-else Console.WriteLine($"Число {evenNumber} нечетное");
-
+// Console.Clear();
+// Console.Write("Введите число, проверю на четность: ");
+// int evenNumber = Convert.ToInt32(Console.ReadLine());
+// if (evenNumber % 2 == 0) Console.WriteLine($"Число {evenNumber} четное");
+// else Console.WriteLine($"Число {evenNumber} нечетное");
 
 //  7. Показать числа от -N до N
+// Console.Clear();
+// Console.Write("Введите число N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// for (int i = -n; i <= n; i++)
+// {
+//     Console.Write($"{i} ");
+// }
+
 //  8. Показать четные числа от 1 до N
 //  9. Показать последнюю цифру трёхзначного числа
 // 10. Показать вторую цифру трёхзначного числа
