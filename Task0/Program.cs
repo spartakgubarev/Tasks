@@ -85,13 +85,19 @@
 // for (int i = 2; i <= n; i += 2) Console.Write($"{i} ");
 
 //  9. Показать последнюю цифру трёхзначного числа
-Console.Clear();
-Console.Write("Введите трехзначное число, покажу последнюю цифру: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"{number % 10}");
-
+// Console.Clear();
+// Console.Write("Введите трехзначное число, покажу последнюю цифру: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{number % 10}");
 
 // 10. Показать вторую цифру трёхзначного числа
+Console.Clear();
+Console.Write("Введите трехзначное число, покажу вторую цифру: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"{number % 100 / 10}");
+
+
+
 // 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
 // 12. Удалить вторую цифру трёхзначного числа
 // 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
