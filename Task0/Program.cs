@@ -104,8 +104,12 @@
 // int max = Math.Max(numberFirst, numberSecond);
 // Console.WriteLine($"В числе {number}, наибольшее число {max}");
 
-
 // 12. Удалить вторую цифру трёхзначного числа
+// Console.Clear();
+// string numberRnd = string.Empty + new Random().Next(100, 1000);
+// Console.WriteLine(numberRnd);
+// Console.WriteLine($"{numberRnd.Remove(1, 1)}");
+
 // 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
 // 14. Найти третью цифру числа или сообщить, что её нет
 
