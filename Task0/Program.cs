@@ -91,14 +91,20 @@
 // Console.WriteLine($"{number % 10}");
 
 // 10. Показать вторую цифру трёхзначного числа
-Console.Clear();
-Console.Write("Введите трехзначное число, покажу вторую цифру: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"{number % 100 / 10}");
-
-
+// Console.Clear();
+// Console.Write("Введите трехзначное число, покажу вторую цифру: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{number % 100 / 10}");
 
 // 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+// Console.Clear();
+// int number = new Random().Next(10, 100);
+// int numberFirst = number / 10;
+// int numberSecond = number % 10;
+// int max = Math.Max(numberFirst, numberSecond);
+// Console.WriteLine($"В числе {number}, наибольшее число {max}");
+
+
 // 12. Удалить вторую цифру трёхзначного числа
 // 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
 // 14. Найти третью цифру числа или сообщить, что её нет
