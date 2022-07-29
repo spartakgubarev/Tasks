@@ -111,6 +111,14 @@
 // Console.WriteLine($"{numberRnd.Remove(1, 1)}");
 
 // 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+// Console.Clear();
+// int numberRnd = new Random().Next(100, 1000);
+// Console.Write($"Задан число {numberRnd}. Введите число, я проверю его на кратность: ");
+// int multiplicity = Convert.ToInt32(Console.ReadLine());
+// if (numberRnd % multiplicity == 0) Console.WriteLine($"Числа кратны {numberRnd} / {multiplicity} = {numberRnd / multiplicity}");
+// else Console.WriteLine($"Числа не кратны {numberRnd} / {multiplicity} остаток {numberRnd % multiplicity}");
+
+
 // 14. Найти третью цифру числа или сообщить, что её нет
 
 
