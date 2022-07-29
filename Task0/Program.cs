@@ -37,14 +37,22 @@
 // if (number == 5) Console.WriteLine($"Вы выбрали {number} - это пятница");
 // if (number == 6) Console.WriteLine($"Вы выбрали {number} - это суббота");
 // if (number == 7) Console.WriteLine($"Вы выбрали {number} - это Воскресенье");
-
 // if (number < 1 & number > 7) Console.WriteLine($"Данное значение не соответствует дню недели");
 
-
-
-
-
 //  4. Найти максимальное из трех чисел
+// Console.Clear();
+// Console.WriteLine("Введите три числа: ");
+// Console.Write("Число 1: ");
+// int numberOne = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Число 2: ");
+// int numberTwo = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Число 3: ");
+// int numberThree = Convert.ToInt32(Console.ReadLine());
+// int max = numberOne;
+// if (max < numberTwo) max = numberTwo;
+// if (max < numberThree) max = numberThree;
+// Console.WriteLine($"Максималное число {max}");
+
 //  5. Написать программу вычисления значения функции y = f(a)
 //  6. Выяснить является ли число чётным
 //  7. Показать числа от -N до N
