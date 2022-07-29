@@ -82,14 +82,15 @@
 // Console.Write("Введите число N, покажу вче четные от 1 до N: ");
 // int n = Convert.ToInt32(Console.ReadLine());
 // Console.Write(1 + " ");
-// for (int i = 2; i <= n; i += 2)
-// {
-//     Console.Write($"{i} ");
-// }
-
-
+// for (int i = 2; i <= n; i += 2) Console.Write($"{i} ");
 
 //  9. Показать последнюю цифру трёхзначного числа
+Console.Clear();
+Console.Write("Введите трехзначное число, покажу последнюю цифру: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"{number % 10}");
+
+
 // 10. Показать вторую цифру трёхзначного числа
 // 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
 // 12. Удалить вторую цифру трёхзначного числа
@@ -99,9 +100,9 @@
 
 // Треугольник Паскаля *** от Сергея Каменского ***
 // Console.Clear();
-// int row = 10;
+// int row = 20;
 // int[,] triagle = new int[row, row];
-// const int cellWidth = 5;
+// const int cellWidth = 6;
 
 // void FillTriagle()
 // {
@@ -141,8 +142,8 @@
 //         for (int j = 0; j <= i; j++)
 //         {
 //             Console.SetCursorPosition(col, i + 1);
-//             // if (triagle[i,j]!=0) Console.Write($"{triagle[i,j],cellWidth}");
-//             if (triagle[i, j] != 0) Console.WriteLine("*");
+//             if (triagle[i,j]!=0) Console.Write($"{triagle[i,j],cellWidth}");
+//             // if (triagle[i, j] != 0) Console.WriteLine("*");
 //             col += cellWidth * 2;
 //         }
 //         col = cellWidth * row - cellWidth * (i + 1);
@@ -152,6 +153,6 @@
 
 // Console.ReadLine();
 // FillTriagle();
-// // PrintTriagle();
+// PrintTriagle();
 // Console.ReadLine();
 // Magic();
