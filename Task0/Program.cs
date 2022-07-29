@@ -27,7 +27,22 @@
 // else Console.WriteLine($"Число {numberSecond} больше {numberFirst}");
 
 //  3. По заданному номеру дня недели вывести его название
-Console.Clear();
+// Console.Clear();
+// Console.Write("Введите день недели от 1 до 7: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (number == 1) Console.WriteLine($"Вы выбрали {number} - это понедельник");
+// if (number == 2) Console.WriteLine($"Вы выбрали {number} - это вторник");
+// if (number == 3) Console.WriteLine($"Вы выбрали {number} - это среда");
+// if (number == 4) Console.WriteLine($"Вы выбрали {number} - это четверг");
+// if (number == 5) Console.WriteLine($"Вы выбрали {number} - это пятница");
+// if (number == 6) Console.WriteLine($"Вы выбрали {number} - это суббота");
+// if (number == 7) Console.WriteLine($"Вы выбрали {number} - это Воскресенье");
+
+// if (number < 1 & number > 7) Console.WriteLine($"Данное значение не соответствует дню недели");
+
+
+
+
 
 //  4. Найти максимальное из трех чисел
 //  5. Написать программу вычисления значения функции y = f(a)
