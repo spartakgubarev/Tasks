@@ -118,9 +118,19 @@
 // if (numberRnd % multiplicity == 0) Console.WriteLine($"Числа кратны {numberRnd} / {multiplicity} = {numberRnd / multiplicity}");
 // else Console.WriteLine($"Числа не кратны {numberRnd} / {multiplicity} остаток {numberRnd % multiplicity}");
 
-
 // 14. Найти третью цифру числа или сообщить, что её нет
-
+// Console.Clear();
+// int numberRnd = new Random().Next(10, 100000);
+// Console.Write(numberRnd);
+// if (numberRnd >= 100)
+// {
+//     while (numberRnd >= 1000)
+//     {
+//         numberRnd /= 10;
+//     }
+//     Console.WriteLine($"\nтретья цифра числа {numberRnd % 10}");
+// }
+// else Console.WriteLine($"\nтретьей цифры нет");
 
 // Треугольник Паскаля *** от Сергея Каменского ***
 // Console.Clear();
