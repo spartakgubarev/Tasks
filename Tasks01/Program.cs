@@ -104,3 +104,26 @@
 // Console.ReadKey();
 
 // 22. Найти расстояние между точками в пространстве 2D/3D
+// Random rand = new Random();
+//             int n = 5;
+//             char[,] a = new char[5, 5];
+//             for(int i = 0; i < n; i++)
+//             {
+//                 for (int j = 0; j < n; j++)
+//                 {
+//                     a[i, j] = (char)rand.Next(0x0410, 0x44F);
+//                     Console.Write(a[i, j] + " ");
+//                 }                             
+//                 Console.WriteLine();
+//             }
+//             Console.ReadKey(true);
+
+// рандомные символы
+// for (int j = 0; j < 10; j++)
+// {
+//     for (int i = 0; i < new Random().Next(1, 6); i++)
+//     {
+//         Console.Write($"{(char)new Random().Next(33, 127)}");
+//     }
+//     Console.WriteLine();
+// }
