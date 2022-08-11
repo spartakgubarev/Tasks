@@ -127,3 +127,27 @@
 //     }
 //     Console.WriteLine();
 // }
+
+
+// таблица уномжнеия
+// Console.Clear();
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[,] matrix = new int[n, n];
+
+// for (int i = 0; i < n; i++)
+// {
+//     for (int j = i; j < n; j++)
+//     {
+//         matrix[i, j] = (1 + i) * (1 + j);
+//         matrix[j, i] = matrix[i, j];
+//     }
+// }
+
+// for (int i = 0; i < n; i++)
+// {
+//     for (int j = 0; j < n; j++)
+//     {
+//         Console.Write(matrix[i, j] + "\t");
+//     }
+//     Console.WriteLine();
+// }
