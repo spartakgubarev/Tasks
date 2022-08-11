@@ -151,3 +151,125 @@
 //     }
 //     Console.WriteLine();
 // }
+
+// Сортировка
+/*
+[6, 15, 2, 9, -3]
+MIN = 6
+6 , 15
+6 > 2
+MIN = 2
+2 < 9
+2 > -3
+MIN = -3
+[-3, 6, 15, 2, 9]
+[6, 15, 2, 9]
+MIN = 6
+6 < 15
+6 > 2
+MIN = 2
+2 < 9
+[-3, 2, 6, 15, 9]
+*/
+// Console.Clear();
+// Random rnd = new Random();
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     array[i] = rnd.Next(-20, 21);
+// }
+// Console.Write("[" + string.Join(",\t", array) + "]");
+// Console.WriteLine();
+
+// int temp = 0;
+// for (int i = 0; i < n - 1; i++)
+// {
+//     int min = array[i];
+//     for (int j = i + 1; j < n; j++)
+//     {
+//         if (min > array[j])
+//         {
+//             min = array[j];
+//             temp = array[i];
+//             array[i] = array[j];
+//             array[j] = temp;
+//         }
+//     }
+
+// }
+// Console.Write("[" + string.Join(",\t", array) + "]");
+
+// Буткемп. 4 урок. Программирование
+// Console.Clear();
+// int n = 5;
+// string[] array = new string[n];
+// for (int i = 0; i < n; i++)
+// {
+//     array[i] = Console.ReadLine(); //
+// }
+// Console.Write("[" + string.Join(", ", array) + "]");
+// Console.WriteLine();
+
+// string temp = string.Empty;
+// for (int i = 0; i < n - 1; i++)
+// {
+//     string min = array[i];
+//     for (int j = i + 1; j < n; j++)
+//     {
+//         if (min.Length > array[j].Length)
+//         {
+//             min = array[j];
+//             temp = array[i];
+//             array[i] = array[j];
+//             array[j] = temp;
+//         }
+//     }
+
+// }
+// Console.Write("[" + string.Join(",", array) + "]");
+
+// Сдивг массива на определенное число
+Console.Clear();
+Console.Write("Введите длину массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[n];
+int[] arrayNew = new int[n];
+CreateRandomArray(array);
+void CreateRandomArray(int[] array) // функция заполнения рандомно массива
+{
+    Random rnd = new Random();
+    for (int i = 0; i < n; i++)
+    {
+        array[i] = rnd.Next(11);
+    }
+    Console.Write($"Первоначальный массив: [{string.Join(", ", array)}]");
+}
+Console.Write("\nВведите на сколько нужно сместить массив влево или вправо: ");
+int step = Convert.ToInt32(Console.ReadLine());
+ShiftArrayNew(array, arrayNew);
+void ShiftArrayNew(int[] array, int[] arrayNew) // функция сдига массива влево, вправо
+{
+    if (step >= 0)
+    {
+        step--;
+        for (int i = 0; i < n - step; i++) arrayNew[i] = array[i + step];
+        int b = 0;
+        for (int i = n - step; i < n; i++) arrayNew[i] = array[b++];
+    }
+    else
+    {
+        // step++;
+        for (int i = 0; i < -step; i++) arrayNew[i] = array[n + step + i];
+        int b = 0;
+        for (int i = -step; i < n; i++) arrayNew[i] = array[b++];
+    }
+    Console.Write($"Первоначальный массив: [{string.Join(", ", arrayNew)}]");
+}
+Console.ReadKey();
+
+
+
+
+
+
