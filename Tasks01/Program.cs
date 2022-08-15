@@ -230,46 +230,78 @@ MIN = 2
 // Console.Write("[" + string.Join(",", array) + "]");
 
 // Сдивг массива на определенное число
-Console.Clear();
-Console.Write("Введите длину массива: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
-int[] arrayNew = new int[n];
-CreateRandomArray(array);
-void CreateRandomArray(int[] array) // функция заполнения рандомно массива
-{
-    Random rnd = new Random();
-    for (int i = 0; i < n; i++)
-    {
-        array[i] = rnd.Next(11);
-    }
-    Console.Write($"Первоначальный массив: [{string.Join(", ", array)}]");
-}
-Console.Write("\nВведите на сколько нужно сместить массив влево или вправо: ");
-int step = Convert.ToInt32(Console.ReadLine());
-ShiftArrayNew(array, arrayNew);
-void ShiftArrayNew(int[] array, int[] arrayNew) // функция сдига массива влево, вправо
-{
-    if (step >= 0)
-    {
-        step--;
-        for (int i = 0; i < n - step; i++) arrayNew[i] = array[i + step];
-        int b = 0;
-        for (int i = n - step; i < n; i++) arrayNew[i] = array[b++];
-    }
-    else
-    {
-        // step++;
-        for (int i = 0; i < -step; i++) arrayNew[i] = array[n + step + i];
-        int b = 0;
-        for (int i = -step; i < n; i++) arrayNew[i] = array[b++];
-    }
-    Console.Write($"Первоначальный массив: [{string.Join(", ", arrayNew)}]");
-}
-Console.ReadKey();
+// Console.Clear();
+// Console.Write("Введите длину массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// int[] arrayNew = new int[n];
+// CreateRandomArray(array);
+// void CreateRandomArray(int[] array) // функция заполнения рандомно массива
+// {
+//     Random rnd = new Random();
+//     for (int i = 0; i < n; i++)
+//     {
+//         array[i] = rnd.Next(11);
+//     }
+//     Console.Write($"Первоначальный массив: [{string.Join(", ", array)}]");
+// }
+// Console.Write("\nВведите на сколько нужно сместить массив влево или вправо: ");
+// int step = Convert.ToInt32(Console.ReadLine());
+// ShiftArrayNew(array, arrayNew);
+// void ShiftArrayNew(int[] array, int[] arrayNew) // функция сдига массива влево, вправо
+// {
+//     if (step >= 0)
+//     {
+//         step--;
+//         for (int i = 0; i < n - step; i++) arrayNew[i] = array[i + step];
+//         int b = 0;
+//         for (int i = n - step; i < n; i++) arrayNew[i] = array[b++];
+//     }
+//     else
+//     {
+//         // step++;
+//         for (int i = 0; i < -step; i++) arrayNew[i] = array[n + step + i];
+//         int b = 0;
+//         for (int i = -step; i < n; i++) arrayNew[i] = array[b++];
+//     }
+//     Console.Write($"Первоначальный массив: [{string.Join(", ", arrayNew)}]");
+// }
+// Console.ReadKey();
 
-
-
-
-
-
+/*
+Сортировка пузырьком
+Начальный массив: [3, 1, 5, 0, 7, 9, 8]
+*/
+// Console.Clear();
+// Console.Write("Ввведите количество массива: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[number];
+// CreateRandomArray(array);
+// void CreateRandomArray(int[] array)
+// {
+//     Random rnd = new Random();
+//     for (int i = 0; i < number; i++)
+//     {
+//         array[i] = rnd.Next(11);
+//     }
+//     Console.Write("Начальный массив:\t[" + string.Join(", ", array) + "]");
+// }
+// SortingArray(array);
+// void SortingArray(int[] array)
+// {
+//     int temp;
+//     for (int i = 0; i < number; i++)
+//     {
+//         for (int j = 0; j < number - 1; j++)
+//         {
+//             if (array[j] > array[j + 1])
+//             {
+//                 temp = array[j];
+//                 array[j] = array[j + 1];
+//                 array[j + 1] = temp;
+//             }
+//         }
+//     }
+//     Console.Write("\nКонечный массив:\t[" + string.Join(", ", array) + "]");
+// }
+// Console.ReadKey();
